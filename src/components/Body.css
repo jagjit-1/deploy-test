@@ -90,4 +90,9 @@
 .stock-news-card-content{
     font-size: 25px;
 }
-
+.stock-info-card:hover{
+    color:lightblue;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition : .3s;
+}

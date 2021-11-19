@@ -48,7 +48,7 @@
     display: block;
     width: 0%;
     height: 3px;
-    background-color: blue;
+    background-color: rgb(55, 74, 80);
     transition: width .3s ;
 }
 .home-icon i:hover::after{
