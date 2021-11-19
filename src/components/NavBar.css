@@ -1,0 +1,60 @@
+*{
+    font-family: sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 2px;
+    height: 9.2vmin;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.header-name{
+    font-size: 5.8vmin;
+    color: red;
+}
+
+.header-searchbar{
+    font-size: 2.4vmin;
+}
+.moon-icon{
+    font-size: 4.4vmin;
+    color: orange;
+}
+
+.lower-header{
+    margin-top: 10vh;;
+    display: flex;
+    background-color: rgb(76, 165, 255);
+    justify-content: space-around;
+    align-items: center;
+    height: 6.5vmin;
+    font-size: 3.8vmin;
+    color: white;
+}
+
+.lower-header i:hover{
+    color:lightblue
+}
+
+.home-icon i::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: blue;
+    transition: width .3s ;
+}
+.home-icon i:hover::after{
+    width:100%;
+    transition: width .3s;
+}
+.lower-header i{
+    color:white
+}
