@@ -18,8 +18,6 @@ ReactDOM.render(<>
     <div className = "dgoyal">
         <App />
     </div>
-    
-    <App />
 </>, document.getElementById('root'));
 
 
