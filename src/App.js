@@ -27,7 +27,7 @@ class App extends Component {
       }
     }).then((response)=>{
 
-    console.log.(response);  
+    console.log(response);  
 
     });
   }
