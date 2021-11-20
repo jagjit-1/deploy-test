@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './App.css';
-// import NavBar from './Components/NavBar';
-// import Body from './Components/Body';
+import NavBar from './Components/NavBar';
+import Body from './Components/Body';
 
 import Dashboard from './components/Dashboard.jsx'
 import UnsafeScriptsWarning from "./components/UnsafeScriptsWarning";
@@ -17,6 +18,19 @@ import UnsafeScriptsWarning from "./components/UnsafeScriptsWarning";
 // }
 
 class App extends Component {
+  OnSearchSubmit(term){
+    axios.get('https://api.marketaux.com/v1/news/all HTTP/1.1',{
+      params:{symbols:term},
+      headers:{
+        Authorization:
+        'Client-ID wK1u0ZjOeOKpColSAPvddRgpGbT2XbwQuRbTpBIt'
+      }
+    }).then((response)=>{
+
+    console.log.(response);  
+
+    });
+  }
 
   state = {
     hasError: false,
